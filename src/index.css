@@ -1,4 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto&family=Roboto+Mono&display=swap');
+
 /* ./src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-image: url('./images/abstract\ white\ background\ with\ Geometry\,vector\,illustration\,gray\,softlight\,square.jpg');
+    background-size: cover;
+
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+
+p {
+    font-family: "Roboto Mono", monospace;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-list a {
+    height: fit-content;
+}
+
+.header-list {
+    align-items: center;
+}
+
+.hero {
+    animation: fadeInAndUp 750ms ease-out;
+}
+
+.hero img {
+    margin: 1em;
+    width: 100px;
+    height: auto;
+    
+}
+.portfolio img {
+    /* margin: 1em auto; */
+    /* width: 500px; */
+    /* height: auto; */
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-grid {
+    grid-template-columns: 3fr 2fr;
+}
+
+.heroText {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Animations */
+
+@keyframes fadeInAndUp {
+    0% {
+        transform: translateY(75%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    
+}
