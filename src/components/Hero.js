@@ -7,7 +7,7 @@ const Hero = () => {
                 <img src={programmingIcon} alt="" />
                 <div className="flex flex-col justify-center">
                     <h1 className="text-gray-800 text-5xl font-semibold">Hello! I'm David Sorensen</h1>
-                    <p className="text-gray-600 py-2">a front-end web developer based in Charlottesville, Virginia</p>
+                    <p className="text-gray-600 py-2">a front-end web developer based in Charlottesville, Virginia.</p>
                 </div>
             </div>
         </div>
