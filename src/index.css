@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url('./images/abstract\ white\ background\ with\ Geometry\,vector\,illustration\,gray\,softlight\,square.jpg');
     background-size: cover;
