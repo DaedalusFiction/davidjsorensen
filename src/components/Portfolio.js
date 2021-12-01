@@ -8,8 +8,8 @@ const Portfolio = () => {
     return (
         <div className="portfolio">
             <div className="bg-white">
+                    <h2 className="text-gray-900 text-center text-5xl font-bold py-8">Projects</h2>
                 <div className="container py-10">
-                    <h2 className="text-gray-900 text-center text-5xl font-bold">Projects</h2>
                     <div className="grid portfolio-grid gap-16">
                         <WebsiteImage url="https://www.streamerize.com" image={streamerizeCap} />
                         <div className="flex flex-col justify-center max-w-lg">
