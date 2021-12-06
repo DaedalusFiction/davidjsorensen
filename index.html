@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Header  -->
-    <section class="header">
+    <div class="header">
         <div class="container">
             <div class="flex">
                 <!-- <img src="./images/daedalusIconSmall.png" alt="Nautilus shell logo"> -->
@@ -18,14 +18,14 @@
                     <div class="secondLetter">S</div>
                 </div>
                 <ul class="flex">
-                    <li>Portfolio</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     
                 </ul>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Hero  -->
 
@@ -43,15 +43,69 @@
     </section>
 
     <!-- Intro  -->
-
+<!-- 
     <section class="intro">
         <div class="container">
-            <div class="flex">
-                <h2></h2>
+            <div class="flex flex-col">
+                <h2>Quality Craftsmanship</h2>
+                <p>done by a quality human being</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Portfolio  -->
+
+    <section class="portfolio" id="portfolio">
+        <h2>Projects</h2>
+        <div class="dark">
+            <div class="flex portfolio_item container">
+                <a href="https://www.streamerize.com" target="_blank" rel="noreferrer"><img class="screenshot" src="./images/streamerizeScreencap.png" alt="Screenshot of Streamerize website"></a>
+                <div class="project_info flex flex-col">
+                    <h3>Streamerize</h3>
+                    <div class="flex">
+                        <div class="tech_tag">HTML</div>
+                        <div class="tech_tag">CSS</div>
+                        <div class="tech_tag">React</div>
+                        <div class="tech_tag">Rest API</div>
+                    </div>
+                    <p>With this project I learned the basics of React, how to make API calls without exposing private information, and how to optimize load times</p>
+                </div>
+            </div>
+        </div>
+        <div>
+           
+
+            <div class="flex portfolio_item container">
+                <div class="project_info flex flex-col">
+                    <h3>The Recursions</h3>
+                    <div class="flex">
+                        <div class="tech_tag">HTML</div>
+                        <div class="tech_tag">CSS</div>
+                        <div class="tech_tag">Netlify</div>
+                    </div>
+                    <p>With this project I learned how to create responsive web designs, how to stylize pseudo-elements, and how to create vibrant color schemes</p>
+                </div>
+                <a href="https://www.therecursions.com" target="_blank" rel="noreferrer"><img class="screenshot" src="./images/recursionsScreencap.png" alt="Screenshot of Recursions website"></a>
+            </div>
+
+            <div class="dark">
+                <div class="flex portfolio_item container">
+                    <a href="https://www.daedalusediting.com" target="_blank" rel="noreferrer"><img class="screenshot" src="./images/daedalusScreencap.png" alt="Screenshot of Daedalus Editing website"></a>
+                    <div class="project_info flex flex-col">
+                        <h3>Daedalus Editing</h3>
+                        <div class="flex">
+                            <div class="tech_tag">HTML</div>
+                            <div class="tech_tag">CSS</div>
+                            <div class="tech_tag">Javascript</div>
+                            <div class="tech_tag">API</div>
+                        </div>
+                        <p>With this project I learned how to use the Interaction Observer API, how to handle user input through forms, and how to set up continuous deployment to Netlify through Github</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
+        
     <!-- Footer  -->
 
     <section class="footer">
