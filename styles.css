@@ -7,8 +7,10 @@
     --bg-accent: #aed8d8;
     --bg-dark: #040F16;
     --bg-dark: #065143;
+    --bg-dark-gradient: linear-gradient(to bottom right, #065143, #065143, #065143, #065143, #065143, #075b4b, #086554, #096f5c, #0c8770, #0ea084, #11b999, #15d3af);
 
     --fc-light: #fbf9ef;
+    --fc-light-200: #d6d4ca;
     --fc-gray-700: rgb(75, 75, 75);
     --fc-gray-500: rgb(114, 114, 114);
 
@@ -58,14 +60,17 @@ li {
     font-size: 1rem;
 }
 
-section {
+/* section {
     padding: 5rem 0;
-}
+} */
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2vw;
+}
+
+.container > * {
+    padding: 0 1rem;
 }
 
 .flex {
@@ -75,6 +80,29 @@ section {
 .flex-col {
     flex-direction: column;
 }
+
+.btn {
+    display: inline-block;
+    width: fit-content;
+    font-family: var(--ff-roboto-mono);
+    margin: 1em 0;
+    padding: .5em;
+    background-color: var(--bg-primary);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.2);
+
+    transition: 200ms;
+}
+
+.dark .btn {
+    background-color: var(--fc-light);
+    color: black;
+}
+
+.btn:hover {
+    transform: translateY(-0.2em);
+}
+
 
 /* Header  */
 
@@ -117,18 +145,14 @@ section {
 
 .logo {
     border: 2px solid var(--fc-light);
-    border-radius: 2px;
-    padding: 0 .4em;
+    border-radius: 5px;
+    padding: 0 .2em;
     margin: .25em;
-    position: relative;
-}
-
-.logo > * {
-    display: inline-block;
     font-size: 2.5rem;
     color: var(--fc-light);
     font-family: var(--ff-logo);
 }
+
 
 /* Hero */
 
@@ -177,9 +201,9 @@ section {
 
 /* Portfolio  */
 
-.portfolio {
+/* .portfolio {
     background-color: var(--bg-accent);
-}
+} */
 
 .portfolio h2 {
     font-size: 4rem;
@@ -201,13 +225,17 @@ section {
 
 .portfolio_item {
     gap: 2em;
-    margin: 2em auto;
+    margin: 0 auto;
     padding: 3rem 0;
     align-items: center;
 }
 
 .project_info {
     justify-content: center;
+}
+
+.portfolio h2 {
+    padding: 2rem 0 0 0;
 }
 
 .project_info h3 {
@@ -225,18 +253,30 @@ section {
 }
 
 .dark {
-    background-color: var(--bg-dark);
+    /* background-color: var(--bg-dark); */
+    background-image: var(--bg-dark-gradient);
+}
+
+
+.dark h2,
+.dark h3 {
+    color: var(--fc-light);
 }
 
 .dark p,
-.dark h2,
-.dark h3,
 .dark div {
-    color: var(--fc-light);
+    color: var(--fc-light-200);
 }
 
 .project_info p {
     margin: .25em 0;
+}
+
+/* Footer  */
+
+.footer {
+    background-color: var(--bg-primary);
+    padding: 1rem 0;
 }
 
 /* Animations  */
