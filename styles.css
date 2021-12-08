@@ -188,7 +188,7 @@ li {
 }
 
 .hero h1 {
-    font-size: min(12vw, 4.5rem);
+    font-size: min(5vw, 4.5rem);
 }
 
 .hero p {
@@ -288,6 +288,29 @@ li {
 .contact-form {
     width: 450px;
     margin: 1em auto;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    font-family: var(--ff-roboto-mono);
+    margin: 1em 0;
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid var(--fc-gray-500);
+}
+
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid var(--fc-gray-700)
+}
+
+.contact-form .btn {
+    color: var(--fc-light);
+    border: none;
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
 }
 
 /* Footer  */
