@@ -86,7 +86,7 @@ li {
     width: fit-content;
     font-family: var(--ff-roboto-mono);
     margin: 1em 0;
-    padding: .5em;
+    padding: .5em 1em;
     background-color: var(--bg-primary);
     border-radius: 5px;
     box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.2);
@@ -117,6 +117,12 @@ li {
 .header {
     background-color: var(--bg-primary);
     box-shadow: 0 5px 5px  rgba(0, 0, 0, 0.2);
+}
+
+.header img {
+    width: 65px;
+    height: auto;
+    margin: .5rem 0;
 }
 
 .header li {
@@ -217,6 +223,9 @@ li {
 .contact h2 {
     font-size: 4rem;
     text-align: center;
+}
+
+.portfolio h2 {
     padding-top: 2rem;
 }
 
@@ -281,6 +290,16 @@ li {
 }
 
 /* Contact Form  */
+
+.contact, 
+.portfolio {
+    padding: 2rem 0 0 0;
+}
+
+.contact {
+    padding-bottom: 2rem;
+}
+
 .contact h2 {
     margin: 0 auto;
     text-align: center;
@@ -288,6 +307,7 @@ li {
 .contact-form {
     width: 450px;
     margin: 1em auto;
+    background-color: white;
 }
 
 .contact-form input, 
@@ -318,6 +338,18 @@ li {
 .footer {
     background-color: var(--bg-primary);
     padding: 1rem 0;
+}
+
+.footer .flex {
+    justify-content: space-between;
+}
+
+.footer div {
+    color: var(--fc-light);
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
 
 /* Animations  */
