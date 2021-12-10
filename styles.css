@@ -337,7 +337,7 @@ li {
 
 .footer {
     background-color: var(--bg-primary);
-    padding: 1rem 0;
+    padding: .8em 0;
 }
 
 .footer .flex {
@@ -346,6 +346,7 @@ li {
 
 .footer div {
     color: var(--fc-light);
+    font-size: .85rem;
 }
 
 .footer a:hover {
