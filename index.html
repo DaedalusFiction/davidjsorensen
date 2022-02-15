@@ -1,149 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>David J Sorensen</title>
-</head>
-<body>
-    <!-- Header  -->
-    <div class="header">
-        <div class="container">
-            <div class="flex">
-                <img src="./images/DSLogo.png" alt="My intials: DS">
-                <ul class="flex">
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <!-- <li><a href="#about">About</a></li> -->
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Hero  -->
-
-    <section class="hero">
-        <div class="container">
-            <div class="flex">
-                <img src="./images/1001161661571183080.svg" alt="laptop icon">
-                
-                <div class="hero-text">
-                    <h1>Hello! I'm David Sorensen</h1>
-                    <p>a front-end web developer based in Charlottesville, Virginia</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="portfolio" id="portfolio">
-        <h2>Projects</h2>
-        
-        <div class="flex portfolio_item container">
-            <div class="project_info flex flex-col">
-                <h3>Holyfield Farms</h3>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>David J Sorensen</title>
+    </head>
+    <body>
+        <!-- Header  -->
+        <div class="header">
+            <div class="container">
                 <div class="flex">
-                    <div class="tech_tag">React</div>
-                    <div class="tech_tag">Firebase</div>
-                    <div class="tech_tag">OAuth</div>
-                </div>
-                <p>With this project I learned how to authenticate using OAuth and how to manage a database through firebase.</p>
-                    <a class="btn" href="https://github.com/DaedalusFiction/holyfield" target="_blank" rel="noreferrer">Github</a>
-                </div>
-                <a href="https://www.holyfieldfarms.com" target="_blank" rel="noreferrer"><img class="screenshot" src="./images/holyfieldScreencap.jpeg" alt="Screenshot of holyield farms website"></a>
-            </div>
-            <div class="dark">
-            
-            <div class="flex portfolio_item container">
-                <a href="https://www.streamerize.com" target="_blank" rel="noreferrer"><img class="screenshot" src="./images/streamerizeScreencap.png" alt="Screenshot of Streamerize website"></a>
-                <div class="project_info flex flex-col">
-                    <h3>Streamerize</h3>
-                    <div class="flex">
-                        <div class="tech_tag">HTML</div>
-                        <div class="tech_tag">CSS</div>
-                        <div class="tech_tag">React</div>
-                        <div class="tech_tag">RESTful API</div>
-                    </div>
-                    <p>With this project I learned the basics of React, how to make API calls without exposing private information, and how to optimize load times</p>
-                    <a class="btn" href="https://github.com/DaedalusFiction/radio-project" target="_blank" rel="noreferrer">Github</a>
+                    <img src="./images/DSLogo.png" alt="My intials: DS" />
+                    <ul class="flex">
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <!-- <li><a href="#about">About</a></li> -->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div>
-           
+
+        <!-- Hero  -->
+
+        <section class="hero">
+            <div class="container">
+                <div class="flex">
+                    <img
+                        src="./images/1001161661571183080.svg"
+                        alt="laptop icon"
+                    />
+                    <div class="hero-text">
+                        <h1>Hello! I'm David Sorensen</h1>
+                        <p>
+                            a front-end web developer based in Charlottesville,
+                            Virginia
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <div class="dark">
+                <h2>Projects</h2>
+                <div class="flex portfolio_item container">
+                    <a
+                        href="http://playlist23.herokuapp.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><img
+                            class="screenshot"
+                            src="./images/playlistScreencap.png"
+                            alt="Screenshot of playlist 23 website"
+                    /></a>
+                    <div class="project_info flex flex-col">
+                        <h3>Playlist: 23</h3>
+                        <div class="flex">
+                            <div class="tech_tag">React</div>
+                            <div class="tech_tag">Socket.io</div>
+                            <div class="tech_tag">Firebase</div>
+                            <div class="tech_tag">Express</div>
+                        </div>
+                        <p>
+                            My largest project to date. In building it I learned
+                            how to set up and manage socket.io connections,
+                            rooms, and events. I furthered my knowledge of React
+                            state management and hooks, as well as firebase
+                            content lifecycle management and the basics of Node
+                            Express.
+                        </p>
+                        <a
+                            class="btn"
+                            href="https://github.com/DaedalusFiction/playlist23"
+                            target="_blank"
+                            rel="noreferrer"
+                            >Github</a
+                        >
+                    </div>
+                </div>
+            </div>
 
             <div class="flex portfolio_item container">
                 <div class="project_info flex flex-col">
-                    <h3>The Recursions</h3>
+                    <h3>Holyfield Farms</h3>
                     <div class="flex">
-                        <div class="tech_tag">HTML</div>
-                        <div class="tech_tag">CSS</div>
+                        <div class="tech_tag">React</div>
+                        <div class="tech_tag">Firebase</div>
+                        <div class="tech_tag">OAuth</div>
                     </div>
-                    <p>With this project I learned how to create responsive web designs, how to stylize pseudo-elements, and how to create vibrant color schemes</p>
-                    <a class="btn" href="https://github.com/DaedalusFiction/radio-project" target="_blank" rel="noreferrer">Github</a>
+                    <p>
+                        With this project I learned how to authenticate using
+                        OAuth and how to manage a database through firebase.
+                    </p>
+                    <a
+                        class="btn"
+                        href="https://github.com/DaedalusFiction/holyfield"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Github</a
+                    >
                 </div>
-                <a href="https://www.therecursions.com" target="_blank" rel="noreferrer"><img class="screenshot" src="./images/recursionsScreencap.png" alt="Screenshot of Recursions website"></a>
+                <a
+                    href="https://www.holyfieldfarms.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><img
+                        class="screenshot"
+                        src="./images/holyfieldScreencap.jpeg"
+                        alt="Screenshot of holyield farms website"
+                /></a>
             </div>
-
             <div class="dark">
                 <div class="flex portfolio_item container">
-                    <a href="https://www.daedalusediting.com" target="_blank" rel="noreferrer"><img class="screenshot" src="./images/daedalusScreencap.png" alt="Screenshot of Daedalus Editing website"></a>
+                    <a
+                        href="https://www.streamerize.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><img
+                            class="screenshot"
+                            src="./images/streamerizeScreencap.png"
+                            alt="Screenshot of Streamerize website"
+                    /></a>
                     <div class="project_info flex flex-col">
-                        <h3>Daedalus Editing</h3>
+                        <h3>Streamerize</h3>
                         <div class="flex">
                             <div class="tech_tag">HTML</div>
                             <div class="tech_tag">CSS</div>
-                            <div class="tech_tag">Javascript</div>
-                            <div class="tech_tag">API</div>
+                            <div class="tech_tag">React</div>
+                            <div class="tech_tag">RESTful API</div>
                         </div>
-                        <p>With this project I learned how to use the Interaction Observer API, how to handle user input through forms, and how to set up continuous deployment to Netlify through Github</p>
-                        <a class="btn" href="https://github.com/DaedalusFiction/Daedalus_Editing" target="_blank" rel="noreferrer">Github</a>
+                        <p>
+                            With this project I learned the basics of React, how
+                            to make API calls without exposing private
+                            information, and how to optimize load times
+                        </p>
+                        <a
+                            class="btn"
+                            href="https://github.com/DaedalusFiction/radio-project"
+                            target="_blank"
+                            rel="noreferrer"
+                            >Github</a
+                        >
                     </div>
                 </div>
             </div>
+            <div>
+                <div class="flex portfolio_item container">
+                    <div class="project_info flex flex-col">
+                        <h3>The Recursions</h3>
+                        <div class="flex">
+                            <div class="tech_tag">HTML</div>
+                            <div class="tech_tag">CSS</div>
+                        </div>
+                        <p>
+                            With this project I learned how to create responsive
+                            web designs, how to stylize pseudo-elements, and how
+                            to create vibrant color schemes
+                        </p>
+                        <a
+                            class="btn"
+                            href="https://github.com/DaedalusFiction/radio-project"
+                            target="_blank"
+                            rel="noreferrer"
+                            >Github</a
+                        >
+                    </div>
+                    <a
+                        href="https://www.therecursions.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><img
+                            class="screenshot"
+                            src="./images/recursionsScreencap.png"
+                            alt="Screenshot of Recursions website"
+                    /></a>
+                </div>
 
-            
-        </div>
-    </section>
-    
-    <!-- Get in Touch  -->
+                <div class="dark">
+                    <div class="flex portfolio_item container">
+                        <a
+                            href="https://www.daedalusediting.com"
+                            target="_blank"
+                            rel="noreferrer"
+                            ><img
+                                class="screenshot"
+                                src="./images/daedalusScreencap.png"
+                                alt="Screenshot of Daedalus Editing website"
+                        /></a>
+                        <div class="project_info flex flex-col">
+                            <h3>Daedalus Editing</h3>
+                            <div class="flex">
+                                <div class="tech_tag">HTML</div>
+                                <div class="tech_tag">CSS</div>
+                                <div class="tech_tag">Javascript</div>
+                                <div class="tech_tag">API</div>
+                            </div>
+                            <p>
+                                With this project I learned how to use the
+                                Interaction Observer API, how to handle user
+                                input through forms, and how to set up
+                                continuous deployment to Netlify through Github
+                            </p>
+                            <a
+                                class="btn"
+                                href="https://github.com/DaedalusFiction/Daedalus_Editing"
+                                target="_blank"
+                                rel="noreferrer"
+                                >Github</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <div class="contact-form card">
-                <form name="contact" method="POST" data-netlify="true">
-                    <p>
-                      <label> <input type="text" name="name" placeholder="Name"/></label>   
-                    </p>
-                    <p>
-                      <label><input type="email" name="email" placeholder="Email" required/></label>
-                    </p>
-                    <p>
-                      <label><textarea name="message" placeholder="Enter a message..."></textarea></label>
-                    </p>
-                    <p>
-                      <button type="submit" class="btn">Send</button>
-                    </p>
-                  </form>
+        <!-- Get in Touch  -->
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-form card">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <p>
+                            <label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Name"
+                            /></label>
+                        </p>
+                        <p>
+                            <label
+                                ><input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email"
+                                    required
+                            /></label>
+                        </p>
+                        <p>
+                            <label>
+                                <textarea
+                                    name="message"
+                                    placeholder="Enter a message..."
+                                ></textarea>
+                            </label>
+                        </p>
+                        <p>
+                            <button type="submit" class="btn">Send</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer  -->
+
+        <div class="footer">
+            <div class="container flex">
+                <div>
+                    <a
+                        href="https://www.vecteezy.com/free-vector/shapes"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Shapes Vectors by Vecteezy</a
+                    >
+                </div>
+                <div>
+                    Icon by
+                    <a
+                        href="https://www.wishforge.games"
+                        target="_blank"
+                        rel="noreferrer"
+                        >www.wishforge.games</a
+                    >
+                    on
+                    <a
+                        href="https://freeicons.io"
+                        target="_blank"
+                        rel="noreferrer"
+                        >freeicons.io</a
+                    >
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer  -->
-
-    <div class="footer">
-        <div class="container flex">
-            <div><a href="https://www.vecteezy.com/free-vector/shapes" target="_blank" rel="noreferrer">Shapes Vectors by Vecteezy</a></div>
-            <div>Icon by 
-                <a href="https://www.wishforge.games" target="_blank" rel="noreferrer">www.wishforge.games</a>
-                on
-                <a href="https://freeicons.io" target="_blank" rel="noreferrer">freeicons.io</a>
-            </div>
-            
-        </div>
-    </div>
-</body>
+    </body>
 </html>
