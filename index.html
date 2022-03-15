@@ -43,10 +43,49 @@
         </section>
 
         <section class="portfolio" id="portfolio">
-            <h2>Projects</h2>
+            <div class="dark">
+                <h2>Projects</h2>
+                <div class="flex portfolio_item container">
+                    <a
+                        href="http://sicktooth.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><img
+                            class="screenshot"
+                            src="./images/sicktoothScreencap.png"
+                            alt="Screenshot of sicktooth website"
+                    /></a>
+                    <div class="project_info flex flex-col">
+                        <a href="http://sicktooth.com">
+                            <h3>SICKTOOTH</h3>
+                        </a>
+                        <div class="flex">
+                            <div class="tech_tag">React</div>
+                            <div class="tech_tag">MUI</div>
+                            <div class="tech_tag">Firebase</div>
+                        </div>
+                        <p>
+                            Literary Magazine. Displays stories through firebase
+                            and handles author submissions through automated
+                            email. With this project I learned much more about
+                            MUI, routing, and data structuring.
+                        </p>
+                        <a
+                            class="btn"
+                            href="https://github.com/DaedalusFiction/sicktooth"
+                            target="_blank"
+                            rel="noreferrer"
+                            >Github</a
+                        >
+                    </div>
+                </div>
+            </div>
+
             <div class="flex portfolio_item container">
                 <div class="project_info flex flex-col">
-                    <h3>The Great Road Trip</h3>
+                    <a href="https://thegreatroadtrip.net">
+                        <h3>The Great Road Trip</h3>
+                    </a>
                     <div class="flex">
                         <div class="tech_tag">React</div>
                         <div class="tech_tag">MUI</div>
@@ -87,7 +126,9 @@
                             alt="Screenshot of playlist 23 website"
                     /></a>
                     <div class="project_info flex flex-col">
-                        <h3>Playlist: 23</h3>
+                        <a href="https://playlist23.herokuapp.com">
+                            <h3>Playlist: 23</h3>
+                        </a>
                         <div class="flex">
                             <div class="tech_tag">React</div>
                             <div class="tech_tag">Socket.io</div>
@@ -115,7 +156,9 @@
 
             <div class="flex portfolio_item container">
                 <div class="project_info flex flex-col">
-                    <h3>Holyfield Farms</h3>
+                    <a href="https://holyfieldfarms.com">
+                        <h3>Holyfield Farms</h3>
+                    </a>
                     <div class="flex">
                         <div class="tech_tag">React</div>
                         <div class="tech_tag">Firebase</div>
@@ -155,7 +198,9 @@
                             alt="Screenshot of Streamerize website"
                     /></a>
                     <div class="project_info flex flex-col">
-                        <h3>Streamerize</h3>
+                        <a href="https://streamerize.com">
+                            <h3>Streamerize</h3>
+                        </a>
                         <div class="flex">
                             <div class="tech_tag">HTML</div>
                             <div class="tech_tag">CSS</div>
@@ -180,7 +225,9 @@
             <div>
                 <div class="flex portfolio_item container">
                     <div class="project_info flex flex-col">
-                        <h3>The Recursions</h3>
+                        <a href="https://therecursions.com">
+                            <h3>The Recursions</h3>
+                        </a>
                         <div class="flex">
                             <div class="tech_tag">HTML</div>
                             <div class="tech_tag">CSS</div>
@@ -274,6 +321,7 @@
                         <p>
                             <label>
                                 <textarea
+                                    rows="4"
                                     name="message"
                                     placeholder="Enter a message..."
                                 ></textarea>
